@@ -1,0 +1,28 @@
+{% extends "@VICTORTest/layout.html.twig" %}
+{% block title %} {{ parent() }} | Utilisateur {% endblock %}
+{% block body %}
+    <h1>{{title|upper}}</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Mail</th>
+                    <th>Motivation</th>
+                    <th>Palme</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td>{{user.lastName}}</td>
+                        <td>{{user.firstName}}</td>
+                        <td>{{user.mail}}</td>
+                        <td>{{user.motivation}}</td>
+                        <td>{{user.palme}}</td>                       
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

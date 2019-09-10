@@ -1,0 +1,20 @@
+{# empty Twig template #}
+{% extends "@VICTORTest/layout.html.twig" %}
+{% block title %} {{ parent() }} | Ajout {% endblock %}
+{% block body %}
+    <h1 class="text-center font-weight-bold mt-3">{{title|upper}}</h1>
+    <div class="row justify-content-center">
+        <div class="col-10 col-md-8">
+            {{form_start(form)}}
+            {{form_label(form.firstName, 'Prénom')}}
+            {{form_widget(form.firstName, {'class' : 'form-control'})}}
+            {{form_label(form.lastName, 'Nom')}}
+            {{form_widget(form.lastName, {'class' : 'form-control'})}}
+            {{form_label(form.mail, 'Mail')}}
+            {{form_widget(form.mail, {'class' : 'form-control'})}}
+            {{form_label(form.motivation, 'Motivation')}}
+            {{form_widget(form.motivation, {'class' : 'form-control'})}}
+            {{form_end(form)}}
+        </div>
+    </div>
+{% endblock %}

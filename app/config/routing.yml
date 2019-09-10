@@ -1,0 +1,7 @@
+victor_test:
+    resource: "@VICTORTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

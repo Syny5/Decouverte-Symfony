@@ -1,0 +1,27 @@
+VICTOR\TestBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: VICTOR\TestBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        lastName:
+            type: string
+            length: 255
+        firstName:
+            type: string
+            length: 255
+        createDate:
+            type: datetime
+        mail:
+            type: string
+            length: 255
+        motivation:
+            type: text
+        palme:
+            type: integer
+    lifecycleCallbacks: {  }

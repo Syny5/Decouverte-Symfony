@@ -1,0 +1,14 @@
+victor_test_homepage:
+    path:     /
+    defaults: { _controller: VICTORTestBundle:Default:index }
+victor_test_user_create:
+    path:     /user/create
+    defaults: { _controller: VICTORTestBundle:User:create }
+victor_test_user_index:
+    path:     /user/
+    defaults: { _controller: VICTORTestBundle:User:index }
+victor_test_user_show:
+    path:     /user/{id}/show
+    defaults: { _controller: VICTORTestBundle:User:show }
+    requirements: 
+        id: '\d+'
